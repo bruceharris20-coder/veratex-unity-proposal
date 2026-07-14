@@ -1,0 +1,209 @@
+<svg width="1440" height="820" viewBox="0 0 1440 820" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','SF Mono','Consolas',monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A1220"/>
+      <stop offset="100%" stop-color="#0D1B2E"/>
+    </linearGradient>
+    <linearGradient id="synthFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#123D36"/>
+      <stop offset="100%" stop-color="#0E322C"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#3B4A63"/>
+    </marker>
+    <marker id="arrowTeal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2DD4BF"/>
+    </marker>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="1440" height="820" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <text x="60" y="46" fill="#2DD4BF" font-size="12" font-weight="700" letter-spacing="3">veratex · AI PIPELINE OVERVIEW</text>
+  <text x="60" y="74" fill="#F4F6F8" font-size="24" font-weight="700" letter-spacing="0.5">From Unity's existing cameras to a consensus-checked alert</text>
+  <line x1="60" y1="92" x2="1380" y2="92" stroke="#1E2A3E" stroke-width="1.5"/>
+
+  <!-- Stage rail -->
+  <g font-size="11" font-weight="700" letter-spacing="2">
+    <text x="130" y="122" fill="#5C7599">01</text>
+    <text x="152" y="122" fill="#5C7599">EXISTING UNITY DEPLOYMENT</text>
+
+    <text x="440" y="122" fill="#2DD4BF">02</text>
+    <text x="462" y="122" fill="#2DD4BF">FEED BRIDGE</text>
+
+    <text x="672" y="122" fill="#E8A33D">03</text>
+    <text x="694" y="122" fill="#E8A33D">AI ANALYST BANK</text>
+
+    <text x="978" y="122" fill="#2DD4BF">04</text>
+    <text x="1000" y="122" fill="#2DD4BF">SYNTHESIS</text>
+
+    <text x="1200" y="122" fill="#5C7599">05</text>
+    <text x="1222" y="122" fill="#5C7599">BACK TO UNITY</text>
+  </g>
+  <line x1="60" y1="136" x2="1380" y2="136" stroke="#182234" stroke-width="1"/>
+
+  <!-- ===== Stage 1: Unity VMS ===== -->
+  <g filter="url(#softShadow)">
+    <rect x="60" y="170" width="230" height="430" rx="10" fill="#101A2B" stroke="#2A3B54" stroke-width="1.2"/>
+  </g>
+  <text x="82" y="202" fill="#C7D2E0" font-size="14" font-weight="700" letter-spacing="1">UNITY VMS</text>
+  <line x1="82" y1="214" x2="268" y2="214" stroke="#233247" stroke-width="1"/>
+
+  <!-- camera rows -->
+  <g font-size="11">
+    <!-- CAM-01 -->
+    <rect x="82" y="228" width="186" height="46" rx="6" fill="#0B1524" stroke="#233247"/>
+    <text x="96" y="248" fill="#DCE4EE" font-weight="700" letter-spacing="0.5">CAM-01</text>
+    <text x="96" y="263" fill="#5C7599">Lobby / East</text>
+
+    <!-- CAM-02 -->
+    <rect x="82" y="282" width="186" height="46" rx="6" fill="#0B1524" stroke="#233247"/>
+    <text x="96" y="302" fill="#DCE4EE" font-weight="700" letter-spacing="0.5">CAM-02</text>
+    <text x="96" y="317" fill="#5C7599">Loading Dock</text>
+
+    <!-- CAM-03 -->
+    <rect x="82" y="336" width="186" height="46" rx="6" fill="#0B1524" stroke="#233247"/>
+    <text x="96" y="356" fill="#DCE4EE" font-weight="700" letter-spacing="0.5">CAM-03</text>
+    <text x="96" y="371" fill="#5C7599">Perimeter N</text>
+
+    <!-- CAM-04..N -->
+    <rect x="82" y="390" width="186" height="46" rx="6" fill="#0B1524" stroke="#233247"/>
+    <text x="96" y="410" fill="#DCE4EE" font-weight="700" letter-spacing="0.5">CAM-04 … N</text>
+    <text x="96" y="425" fill="#5C7599">Existing feed set</text>
+
+    <!-- Existing rules -->
+    <rect x="82" y="450" width="186" height="56" rx="6" fill="#0B1524" stroke="#3A4A63"/>
+    <text x="96" y="470" fill="#F4F6F8" font-weight="700" letter-spacing="0.3">Existing Rules</text>
+    <text x="96" y="486" fill="#5C7599">Motion / line-cross</text>
+    <text x="96" y="499" fill="#5C7599">alerts — unchanged</text>
+  </g>
+
+  <!-- connectors VMS -> feed bridge -->
+  <path d="M290,251 H345 V330" fill="none" stroke="#3B4A63" stroke-width="1.5"/>
+  <path d="M290,305 H345 V330" fill="none" stroke="#3B4A63" stroke-width="1.5"/>
+  <path d="M290,359 H345 V330 M345,330 H385" fill="none" stroke="#3B4A63" stroke-width="1.5"/>
+  <path d="M345,330 H385" fill="none" stroke="#3B4A63" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ===== Stage 2: Feed Bridge ===== -->
+  <g filter="url(#softShadow)">
+    <rect x="385" y="256" width="200" height="220" rx="10" fill="#0F1A2B" stroke="#2DD4BF" stroke-width="1.4"/>
+  </g>
+  <text x="405" y="288" fill="#2DD4BF" font-size="13" font-weight="700" letter-spacing="1.5">FEED BRIDGE</text>
+  <line x1="405" y1="300" x2="565" y2="300" stroke="#1D4B45" stroke-width="1"/>
+  <g font-size="11.5" fill="#C7D2E0">
+    <text x="405" y="325">Reads existing RTSP /</text>
+    <text x="405" y="341">Unity API streams</text>
+    <text x="405" y="366">Normalizes + timestamps</text>
+    <text x="405" y="391">Fans out to analyst bank</text>
+  </g>
+  <rect x="405" y="410" width="160" height="26" rx="13" fill="#0E322C" stroke="#2DD4BF" stroke-width="1"/>
+  <text x="416" y="427" fill="#4FE3C7" font-size="10.5" font-weight="700" letter-spacing="0.5">NO NEW HARDWARE</text>
+
+  <!-- connectors feed bridge -> analysts -->
+  <path d="M585,320 H625 V236" fill="none" stroke="#3B4A63" stroke-width="1.5"/>
+  <path d="M625,236 H655" fill="none" stroke="#3B4A63" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M585,366 H655" fill="none" stroke="#3B4A63" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M585,412 H625 V500" fill="none" stroke="#3B4A63" stroke-width="1.5"/>
+  <path d="M625,500 H655" fill="none" stroke="#3B4A63" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ===== Stage 3: Analyst bank ===== -->
+  <!-- Vision -->
+  <g filter="url(#softShadow)">
+    <rect x="655" y="170" width="255" height="100" rx="10" fill="#12161F" stroke="#3A2F1E" stroke-width="1.2"/>
+  </g>
+  <circle cx="678" cy="197" r="5" fill="#E8A33D"/>
+  <text x="694" y="202" fill="#F4F6F8" font-size="13.5" font-weight="700">Vision Analyst</text>
+  <text x="678" y="224" fill="#8A94A6" font-size="11">Detects people, vehicles,</text>
+  <text x="678" y="240" fill="#8A94A6" font-size="11">and objects per frame</text>
+
+  <!-- Behavior -->
+  <g filter="url(#softShadow)">
+    <rect x="655" y="316" width="255" height="100" rx="10" fill="#12161F" stroke="#3A2F1E" stroke-width="1.2"/>
+  </g>
+  <circle cx="678" cy="343" r="5" fill="#E8A33D"/>
+  <text x="694" y="348" fill="#F4F6F8" font-size="13.5" font-weight="700">Behavior Analyst</text>
+  <text x="678" y="370" fill="#8A94A6" font-size="11">Flags anomalies against</text>
+  <text x="678" y="386" fill="#8A94A6" font-size="11">site-specific patterns over time</text>
+
+  <!-- Reasoning -->
+  <g filter="url(#softShadow)">
+    <rect x="655" y="450" width="255" height="100" rx="10" fill="#12161F" stroke="#3A2F1E" stroke-width="1.2"/>
+  </g>
+  <circle cx="678" cy="477" r="5" fill="#E8A33D"/>
+  <text x="694" y="482" fill="#F4F6F8" font-size="13.5" font-weight="700">Reasoning Analyst</text>
+  <text x="678" y="504" fill="#8A94A6" font-size="11">Writes a plain-language incident</text>
+  <text x="678" y="520" fill="#8A94A6" font-size="11">narrative from the above two</text>
+
+  <!-- connectors analysts -> synthesis -->
+  <path d="M910,220 H955 V385" fill="none" stroke="#3B4A63" stroke-width="1.5"/>
+  <path d="M910,366 H955 V385" fill="none" stroke="#3B4A63" stroke-width="1.5"/>
+  <path d="M910,500 H955 V385" fill="none" stroke="#3B4A63" stroke-width="1.5"/>
+  <path d="M955,385 H995" fill="none" stroke="#3B4A63" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ===== Stage 4: Synthesis ===== -->
+  <g filter="url(#softShadow)">
+    <rect x="995" y="300" width="200" height="200" rx="10" fill="url(#synthFill)" stroke="#2DD4BF" stroke-width="1.6"/>
+  </g>
+  <text x="1015" y="332" fill="#4FE3C7" font-size="13.5" font-weight="700" letter-spacing="1">SYNTHESIS</text>
+  <line x1="1015" y1="344" x2="1175" y2="344" stroke="#1D4B45" stroke-width="1"/>
+  <g font-size="11.5" fill="#D6EFE9">
+    <text x="1015" y="368">Cross-checks all three</text>
+    <text x="1015" y="384">analysts before alerting</text>
+    <text x="1015" y="408">Weighs confidence, suppresses</text>
+    <text x="1015" y="424">false positives</text>
+  </g>
+  <rect x="1015" y="444" width="160" height="30" rx="15" fill="#123D36" stroke="#4FE3C7" stroke-width="1.2"/>
+  <text x="1035" y="464" fill="#4FE3C7" font-size="11" font-weight="700" letter-spacing="0.5">CONSENSUS SCORE</text>
+
+  <!-- connectors synthesis -> outputs -->
+  <path d="M1195,360 H1235 V225" fill="none" stroke="#2DD4BF" stroke-width="1.6"/>
+  <path d="M1235,225 H1268" fill="none" stroke="#2DD4BF" stroke-width="1.6" stroke-dasharray="1,0"/>
+  <path d="M1195,400 H1268" fill="none" stroke="#2DD4BF" stroke-width="1.8" marker-end="url(#arrowTeal)"/>
+  <path d="M1195,440 H1235 V568" fill="none" stroke="#2DD4BF" stroke-width="1.6"/>
+  <path d="M1235,568 H1268" fill="none" stroke="#2DD4BF" stroke-width="1.6" marker-end="url(#arrowTeal)"/>
+
+  <!-- ===== Stage 5: Outputs ===== -->
+  <!-- Alert queue -->
+  <g filter="url(#softShadow)">
+    <rect x="1268" y="170" width="140" height="100" rx="10" fill="#101A2B" stroke="#2A3B54" stroke-width="1.2"/>
+  </g>
+  <text x="1286" y="200" fill="#DCE4EE" font-size="12.5" font-weight="700">Unity Alert Queue</text>
+  <text x="1286" y="222" fill="#5C7599" font-size="10.5">Same operator console,</text>
+  <text x="1286" y="236" fill="#5C7599" font-size="10.5">no new UI to learn</text>
+
+  <!-- Incident report -->
+  <g filter="url(#softShadow)">
+    <rect x="1268" y="350" width="140" height="100" rx="10" fill="#0F1A2B" stroke="#2DD4BF" stroke-width="1.3"/>
+  </g>
+  <text x="1286" y="380" fill="#4FE3C7" font-size="12.5" font-weight="700">Incident Report</text>
+  <text x="1286" y="402" fill="#8FB8AF" font-size="10.5">Auto-drafted narrative,</text>
+  <text x="1286" y="416" fill="#8FB8AF" font-size="10.5">timestamps + evidence</text>
+
+  <!-- Trend dashboard -->
+  <g filter="url(#softShadow)">
+    <rect x="1268" y="518" width="140" height="100" rx="10" fill="#101A2B" stroke="#2A3B54" stroke-width="1.2"/>
+  </g>
+  <text x="1286" y="548" fill="#DCE4EE" font-size="12.5" font-weight="700">Trend Dashboard</text>
+  <text x="1286" y="570" fill="#5C7599" font-size="10.5">Site-level patterns for</text>
+  <text x="1286" y="584" fill="#5C7599" font-size="10.5">the client's security team</text>
+
+  <!-- ===== Legend ===== -->
+  <line x1="60" y1="680" x2="1380" y2="680" stroke="#1E2A3E" stroke-width="1"/>
+  <g font-size="12" fill="#B7C2D3">
+    <rect x="60" y="704" width="16" height="16" rx="4" fill="#101A2B" stroke="#2A3B54"/>
+    <text x="86" y="717">Existing Unity component — untouched</text>
+
+    <circle cx="418" cy="712" r="6" fill="#E8A33D"/>
+    <text x="436" y="717">Individual AI analyst</text>
+
+    <rect x="620" y="704" width="16" height="16" rx="4" fill="#123D36" stroke="#2DD4BF"/>
+    <text x="646" y="717">Synthesis / consensus output</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="60" y="770" fill="#3B4A63" font-size="10.5" letter-spacing="0.5">WARDLINE AI (working name) — architecture overview, prepared for internal review</text>
+  <text x="1380" y="770" fill="#3B4A63" font-size="10.5" text-anchor="end" letter-spacing="0.5">Confidential — draft</text>
+</svg>
