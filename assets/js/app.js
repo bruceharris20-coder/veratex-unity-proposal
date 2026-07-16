@@ -1,0 +1,10 @@
+const menu=document.querySelector('.menu-toggle');
+const nav=document.querySelector('.primary-nav');
+menu?.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));});
+nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+const reveal=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');reveal.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>reveal.observe(el));
+const sections=[...document.querySelectorAll('main section[id]')];
+const links=[...document.querySelectorAll('.primary-nav a[href^="#"]')];
+const spy=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id))}}),{rootMargin:'-42% 0px -52% 0px'});
+sections.forEach(s=>spy.observe(s));

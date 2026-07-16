@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 450" width="100%" height="100%" style="background-color: #0B111E; font-family: system-ui, -apple-system, sans-serif;">
+  <defs>
+    <!-- Sharp Glow Filters for Techno-Functional Styling -->
+    <filter id="glow-blue" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="glow-emerald" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="glow-amber" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    
+    <!-- Arrow Markers -->
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#94A3B8" />
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#3B82F6" />
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#F59E0B" />
+    </marker>
+  </defs>
+
+  <!-- Title & Prominent Subtitles -->
+  <text x="40" y="40" fill="#FFFFFF" font-size="22" font-weight="800" letter-spacing="0.5">Veratex AI Process Flow</text>
+  <text x="40" y="65" fill="#3B82F6" font-size="13" font-weight="700" letter-spacing="1.5">COGNITIVE SURVEILLANCE WORKFLOW PIPELINE</text>
+  <text x="40" y="85" fill="#E2E8F0" font-size="11.5" font-weight="600" letter-spacing="0.2">Additive multi-signal AI reasoning layer integrated natively with Unity Surveillance, Inc. deployments</text>
+
+  <!-- Customization Info Box (Top Right) -->
+  <g transform="translate(800, 20)">
+    <rect width="310" height="65" rx="8" fill="#1E293B" stroke="#F59E0B" stroke-width="1.5" opacity="0.95" />
+    <text x="15" y="22" fill="#F8FAFC" font-size="11" font-weight="600" line-height="14">
+      <tspan x="15" dy="0">Based on business expectations and</tspan>
+      <tspan x="15" dy="15">requirements the AI/ML driven</tspan>
+      <tspan x="15" dy="15" fill="#FBBF24" font-weight="700">solution can be customized.</tspan>
+    </text>
+  </g>
+
+  <!-- STAGE 1: Existing Unity Infrastructure (Prominent Steel Border) -->
+  <g transform="translate(40, 110)">
+    <rect width="170" height="280" rx="12" fill="#111827" stroke="#94A3B8" stroke-width="2" />
+    <rect width="170" height="40" rx="12" fill="#1F2937" opacity="0.4" />
+    <text x="15" y="26" fill="#94A3B8" font-size="11" font-weight="700" letter-spacing="0.5">STAGE 1</text>
+    <text x="15" y="65" fill="#FFFFFF" font-size="15" font-weight="700">Unity Ingestion</text>
+    <text x="15" y="85" fill="#94A3B8" font-size="11" font-weight="600">EXISTING INFRASTRUCTURE</text>
+    
+    <!-- Core Items -->
+    <circle cx="20" cy="115" r="3" fill="#3B82F6" />
+    <text x="30" y="118" fill="#D1D5DB" font-size="12">Unity RTSP/VMS</text>
+    <circle cx="20" cy="145" r="3" fill="#3B82F6" />
+    <text x="30" y="148" fill="#D1D5DB" font-size="12">Standing Camera Set</text>
+    <circle cx="20" cy="175" r="3" fill="#3B82F6" />
+    <text x="30" y="178" fill="#D1D5DB" font-size="12">Rule-Based Alarms</text>
+    
+    <!-- Edge Constraints Badge -->
+    <rect x="15" y="235" width="140" height="30" rx="6" fill="#1F2937" />
+    <circle cx="30" cy="250" r="4" fill="#94A3B8" />
+    <text x="42" y="254" fill="#E2E8F0" font-size="11" font-weight="600">Zero Touchpoint</text>
+  </g>
+
+  <!-- Flow Line 1 to 2 -->
+  <path d="M 210 250 L 250 250" fill="none" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow-gray)" />
+
+  <!-- STAGE 2: Real-time Feed Bridge -->
+  <g transform="translate(250, 110)">
+    <rect width="170" height="280" rx="12" fill="#111827" stroke="#3B82F6" stroke-width="2" filter="url(#glow-blue)" opacity="0.9" />
+    <rect width="170" height="280" rx="12" fill="#111827" stroke="#3B82F6" stroke-width="1.5" />
+    <rect width="170" height="40" rx="12" fill="#1E3A8A" opacity="0.3" />
+    <text x="15" y="26" fill="#60A5FA" font-size="11" font-weight="700" letter-spacing="0.5">STAGE 2</text>
+    <text x="15" y="65" fill="#FFFFFF" font-size="15" font-weight="700">Feed Bridge</text>
+    <text x="15" y="85" fill="#60A5FA" font-size="11" font-weight="600">TEMPORAL NORMALIZATION</text>
+
+    <!-- Normalization Components -->
+    <circle cx="20" cy="115" r="3" fill="#60A5FA" />
+    <text x="30" y="118" fill="#D1D5DB" font-size="12">API/RTSP Stream</text>
+    <circle cx="20" cy="145" r="3" fill="#60A5FA" />
+    <text x="30" y="148" fill="#D1D5DB" font-size="12">Temporal Timestamp</text>
+    <circle cx="20" cy="175" r="3" fill="#60A5FA" />
+    <text x="30" y="178" fill="#D1D5DB" font-size="12">Pipeline Multiplexing</text>
+
+    <!-- Business Value Badge -->
+    <rect x="15" y="235" width="140" height="30" rx="6" fill="#1E3A8A" opacity="0.4" />
+    <text x="24" y="254" fill="#93C5FD" font-size="11" font-weight="600">No New Hardware</text>
+  </g>
+
+  <!-- Flow Lines 2 to 3 -->
+  <path d="M 420 250 L 440 250" fill="none" stroke="#3B82F6" stroke-width="2" />
+  <path d="M 440 165 L 440 335" fill="none" stroke="#3B82F6" stroke-width="2" />
+  <path d="M 440 165 L 465 165" fill="none" stroke="#3B82F6" stroke-width="2" marker-end="url(#arrow-blue)" />
+  <path d="M 440 250 L 465 250" fill="none" stroke="#3B82F6" stroke-width="2" marker-end="url(#arrow-blue)" />
+  <path d="M 440 335 L 465 335" fill="none" stroke="#3B82F6" stroke-width="2" marker-end="url(#arrow-blue)" />
+
+  <!-- STAGE 3: High-Visibility Amber Orange AI/ML Engine Bank -->
+  <text x="575" y="100" fill="#F59E0B" font-size="11" font-weight="800" letter-spacing="1" text-anchor="middle">STAGE 3: AI / ML MULTI MODEL ENGINE</text>
+  
+  <!-- Engine 1: Object & Spatial Detection (Center-Y: 157.5) -->
+  <g transform="translate(465, 125)">
+    <rect width="220" height="65" rx="8" fill="#1F1A11" stroke="#F59E0B" stroke-width="1.5" filter="url(#glow-amber)" opacity="0.9" />
+    <rect width="220" height="65" rx="8" fill="#1A120B" stroke="#FBBF24" stroke-width="1" />
+    <text x="15" y="25" fill="#FFFBEB" font-size="13" font-weight="700">Object &amp; Spatial Engine</text>
+    <text x="15" y="45" fill="#FCD34D" font-size="11">Frame-by-frame object classification</text>
+  </g>
+
+  <!-- Engine 2: Temporal Sequence Anomaly Engine (Center-Y: 250) -->
+  <g transform="translate(465, 217.5)">
+    <rect width="220" height="65" rx="8" fill="#1F1A11" stroke="#F59E0B" stroke-width="1.5" filter="url(#glow-amber)" opacity="0.9" />
+    <rect width="220" height="65" rx="8" fill="#1A120B" stroke="#FBBF24" stroke-width="1" />
+    <text x="15" y="25" fill="#FFFBEB" font-size="13" font-weight="700">Temporal Sequence Engine</text>
+    <text x="15" y="45" fill="#FCD34D" font-size="11">Site-pattern behavioral anomalies</text>
+  </g>
+
+  <!-- Engine 3: Cognitive Narrative Generation Engine (Center-Y: 342.5) -->
+  <g transform="translate(465, 310)">
+    <rect width="220" height="65" rx="8" fill="#1F1A11" stroke="#F59E0B" stroke-width="1.5" filter="url(#glow-amber)" opacity="0.9" />
+    <rect width="220" height="65" rx="8" fill="#1A120B" stroke="#FBBF24" stroke-width="1" />
+    <text x="15" y="25" fill="#FFFBEB" font-size="13" font-weight="700">Cognitive Reasoning Engine</text>
+    <text x="15" y="45" fill="#FCD34D" font-size="11">LLM generated plain-text alerts</text>
+  </g>
+
+  <!-- Stage 3 to 4 Converging Amber Connection Paths -->
+  <!-- Upper Engine Output Connection -->
+  <path d="M 685 157.5 L 705 157.5 L 705 250" fill="none" stroke="#F59E0B" stroke-width="2" />
+  <!-- Middle Engine Output Connection -->
+  <path d="M 685 250 L 705 250" fill="none" stroke="#F59E0B" stroke-width="2" />
+  <!-- Lower Engine Output Connection -->
+  <path d="M 685 342.5 L 705 342.5 L 705 250" fill="none" stroke="#F59E0B" stroke-width="2" />
+  
+  <!-- Final Single Converged Arrow entering Stage 4 -->
+  <path d="M 705 250 L 730 250" fill="none" stroke="#F59E0B" stroke-width="3" marker-end="url(#arrow-amber)" filter="url(#glow-amber)" />
+  <path d="M 705 250 L 730 250" fill="none" stroke="#F59E0B" stroke-width="2" marker-end="url(#arrow-amber)" />
+
+  <!-- STAGE 4: Consensus Synthesis Node -->
+  <g transform="translate(735, 110)">
+    <rect width="170" height="280" rx="12" fill="#111827" stroke="#10B981" stroke-width="2" filter="url(#glow-emerald)" opacity="0.9" />
+    <rect width="170" height="280" rx="12" fill="#111827" stroke="#10B981" stroke-width="1.5" />
+    <rect width="170" height="40" rx="12" fill="#065F46" opacity="0.3" />
+    <text x="15" y="26" fill="#34D399" font-size="11" font-weight="700" letter-spacing="0.5">STAGE 4</text>
+    <text x="15" y="65" fill="#FFFFFF" font-size="15" font-weight="700">Synthesis Node</text>
+    <text x="15" y="85" fill="#34D399" font-size="11" font-weight="600">CROSS-MODEL VALIDATION</text>
+
+    <!-- Synthesis Logic -->
+    <circle cx="20" cy="115" r="3" fill="#34D399" />
+    <text x="30" y="118" fill="#D1D5DB" font-size="12">Multi-Signal Consent</text>
+    <circle cx="20" cy="145" r="3" fill="#34D399" />
+    <text x="30" y="148" fill="#D1D5DB" font-size="12">Confidence Weighting</text>
+    <circle cx="20" cy="175" r="3" fill="#34D399" />
+    <text x="30" y="178" fill="#D1D5DB" font-size="12">False-Positive Filters</text>
+
+    <!-- Value Metric -->
+    <rect x="15" y="235" width="140" height="30" rx="6" fill="#065F46" opacity="0.4" />
+    <text x="21" y="254" fill="#A7F3D0" font-size="11" font-weight="600">Consensus Optimizer</text>
+  </g>
+
+  <!-- Flow Line 4 to 5 -->
+  <path d="M 905 250 L 945 250" fill="none" stroke="#10B981" stroke-width="2" marker-end="url(#arrow-blue)" />
+
+  <!-- STAGE 5: Native Operators Console (Return - Prominent Steel Border) -->
+  <g transform="translate(945, 110)">
+    <rect width="170" height="280" rx="12" fill="#111827" stroke="#94A3B8" stroke-width="2" />
+    <rect width="170" height="40" rx="12" fill="#1F2937" opacity="0.4" />
+    <text x="15" y="26" fill="#94A3B8" font-size="11" font-weight="700" letter-spacing="0.5">STAGE 5</text>
+    <text x="15" y="65" fill="#FFFFFF" font-size="15" font-weight="700">Back to Unity</text>
+    <text x="15" y="85" fill="#94A3B8" font-size="11" font-weight="600">NATIVE WORKSPACE</text>
+
+    <!-- Elements -->
+    <circle cx="20" cy="115" r="3" fill="#10B981" />
+    <text x="30" y="118" fill="#D1D5DB" font-size="12">Native Alert Queue</text>
+    <circle cx="20" cy="145" r="3" fill="#10B981" />
+    <text x="30" y="148" fill="#D1D5DB" font-size="12">Drafted Incidents</text>
+    <circle cx="20" cy="175" r="3" fill="#10B981" />
+    <text x="30" y="178" fill="#D1D5DB" font-size="12">Trend Dashboards</text>
+
+    <!-- Compliance Badge -->
+    <rect x="15" y="235" width="140" height="30" rx="6" fill="#1F2937" />
+    <text x="22" y="254" fill="#D1D5DB" font-size="11" font-weight="600">Zero Staff Training</text>
+  </g>
+</svg>
